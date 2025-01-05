@@ -1,0 +1,170 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Header */
+header {
+    background: #003366;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav.topnav a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav.topnav a:hover {
+    background-color: #00509e;
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+nav .brand {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    color: #00014d;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: #00014d;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
+nav .profile-picture-container:hover .dropdown-content {
+    display: block;
+}
+
+/* Student Info */
+.student-info {
+    margin-bottom: 20px;
+}
+
+.info-heading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-details p {
+    margin: 5px 0;
+}
+
+/* Grades Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background: #007bff;
+    color: white;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background: #003366;;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .social-media {
+    margin-bottom: 10px;
+}
+
+.footer .social-media a {
+    margin: 0 10px;
+}
+
+.footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    nav.topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .dropdown-content {
+        width: 60%;
+        right: 0;
+        top: 50px;
+    }
+    .dropdown-content a {
+            color:  #01112c;
+            padding: 10px;
+            text-align: center;
+            display: block;
+        }
+    nav.topnav a {
+        padding: 10px 0;
+    }
+
+    .footer {
+        position: static;
+        width: 100%;
+    }
+}

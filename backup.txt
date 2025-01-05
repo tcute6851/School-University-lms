@@ -1,0 +1,398 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    background-color: #003366;
+    padding: 15px 0;
+}
+
+nav.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav.topnav a {
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav.topnav a:hover {
+    background-color: #00509e;
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+nav .brand {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+nav .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: #004d40;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav .profile-picture-container:hover .dropdown-content {
+    display: block;
+}
+
+
+You said:
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px;
+}
+
+.topnav {
+    background-color: #003366;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.topnav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+.topnav a:hover {
+    background-color: #00509e;
+    border-radius: 5px;
+}
+
+.brand {
+    font-size: 20px;
+}
+
+.profile-picture-container {
+    position: relative;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.notification {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon {
+    margin-right: 10px;
+}
+
+.modal, .modallogs {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content, .modal-contentlogs {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-content h2, .modal-contentlogs h2 {
+    margin-top: 0;
+}
+
+.btnupdate, .btndelete {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btnupdate:hover, .btndelete:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.table-container {
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+    margin-top: 20px; 
+}
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+th {
+    background-color: #52a6fa;
+    color: #000; 
+    padding: 15px;
+    text-align: left; 
+    border: 1px solid #000000; 
+    font-weight: bold; 
+}
+td {
+    background-color: #fff;
+    color: #000; 
+    padding: 15px; 
+    border: 1px solid #000000;
+}
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        right: 0;
+        top: 50px;
+    }
+
+    .modal-content, .modal-contentlogs {
+        width: 90%;
+    }
+}
+
+.button {
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e07b00;
+}
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .features-heading {
+        font-size: 1.5rem;
+    }
+
+    .feature-heading {
+        font-size: 1.2rem;
+    }
+
+    nav .profile-picture {
+        width: 35px;
+        height: 35px;
+    }
+} 
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+    nav.topnav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+    .brand {
+        font-size: 18px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        right: 0;
+        top: 50px;
+    }
+ 
+    .modal-content, .modal-contentlogs {
+        width: 90%;
+    }
+}
+
+.button {
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e07b00;
+}
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 1.8rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .features-heading {
+        font-size: 1.5rem;
+    }
+
+    .feature-heading {
+        font-size: 1.2rem;
+    }
+
+    nav .profile-picture {
+        width: 35px;
+        height: 35px;
+    }
+}
